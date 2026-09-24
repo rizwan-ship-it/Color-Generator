@@ -7,6 +7,7 @@ import {
   fn_rgb_genrated
 } from './helper/gradientGenrated'
 
+
 function App () {
   // DEFINING FORM GRADIENT DETAILS FOR NUMBER OF GRADIENTS , TYPE OF GRADIENTS
   const initialLinearGradientDetails = {

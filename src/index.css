@@ -60,3 +60,18 @@ h1 {
 .color-genrater-form button:active {
   scale: 0.95;
 }
+/* ============================COPY BUTTON==================== */
+.copy-btn {
+  padding: 4px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background: #357ef4;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.copy-btn:active {
+  scale: 0.97;
+}

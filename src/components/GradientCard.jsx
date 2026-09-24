@@ -1,9 +1,9 @@
-function GradientCard ({ color }) {
+import { ToastContainer, toast } from 'react-toastify'
 
+function GradientCard ({ color }) {
   console.log(color)
-  
-  
-  const handleCopy = (colorCode) => {
+
+  const handleCopy = colorCode => {
     navigator.clipboard.writeText(colorCode)
     toast.success('css copied to clipboard', {
       autoClose: 500
@@ -12,12 +12,12 @@ function GradientCard ({ color }) {
 
   return (
     <div className='gradient-card' style={{ background: color }}>
-      <button onClick={() => handleCopy(color)} className='copy-btn'>
-        CSS
+      <button className='copy-btn' onClick={() => handleCopy(color)}>
+        Copy
       </button>
+      <ToastContainer />
     </div>
   )
 }
 
 export default GradientCard
- 
